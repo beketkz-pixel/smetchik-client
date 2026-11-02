@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "smetchik": {
+      "type": "http",
+      "url": "https://smeta.nakasse.kz/mcp"
+    }
+  }
+}

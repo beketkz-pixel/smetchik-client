@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "smetchik",
+  "version": "1.1.0",
+  "description": "Сметчик РК: тонкий skill и подключение MCP через учётку портала",
+  "author": {
+    "name": "beketkz-pixel"
+  },
+  "homepage": "https://smeta.nakasse.kz",
+  "repository": "https://github.com/beketkz-pixel/smetchik-client"
+}

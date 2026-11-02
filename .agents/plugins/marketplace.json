@@ -1,0 +1,20 @@
+{
+  "name": "smetchik-client",
+  "interface": {
+    "displayName": "Сметчик РК"
+  },
+  "plugins": [
+    {
+      "name": "smetchik",
+      "source": {
+        "source": "local",
+        "path": "./plugins/smetchik"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

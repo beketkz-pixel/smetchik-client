@@ -1,0 +1,13 @@
+{
+  "name": "smetchik-client",
+  "owner": {
+    "name": "beketkz-pixel"
+  },
+  "plugins": [
+    {
+      "name": "smetchik",
+      "source": "./plugins/smetchik"
+    }
+  ],
+  "description": "Тонкий skill и MCP Сметчик РК для клиентов портала"
+}
