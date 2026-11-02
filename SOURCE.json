@@ -1,0 +1,8 @@
+{
+  "source_path": "mcp/client-skill",
+  "source_commit": "ce8a37c7cc2516a981d67eea1601a8de12c35803",
+  "files": {
+    "SKILL.md": "f216a128ac8d30d15b49699135e1bac5516bf162413af1f31054abb459fb2433",
+    "references/context-rules.md": "af09504df4adeabbcc8ade773bcec15f3e33e6cde6d801f51be193bb418affa5"
+  }
+}
