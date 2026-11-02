@@ -3,17 +3,7 @@
   "mcpServers": {
     "smetchik": {
       "type": "streamable-http",
-      "url": "https://smeta.nakasse.kz/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            }
-          }
-        }
-      }
+      "url": "https://smeta.nakasse.kz/mcp"
     }
   }
 }

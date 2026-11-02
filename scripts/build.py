@@ -13,7 +13,7 @@ for rel, digest in source["files"].items():
 for rel in ("plugin.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
     manifest = json.loads((plugin / rel).read_text(encoding="utf-8"))
     assert manifest["name"] == "smetchik"
-    assert manifest["version"] == "1.1.0"
+    assert manifest["version"] == "1.1.1"
 for rel in (".agents/plugins/marketplace.json", ".claude-plugin/marketplace.json"):
     catalog = json.loads((root / rel).read_text(encoding="utf-8"))
     assert catalog["name"] == "smetchik-client"
@@ -21,6 +21,7 @@ for rel in (".agents/plugins/marketplace.json", ".claude-plugin/marketplace.json
 for rel in ("mcp.json", ".mcp.json"):
     servers = json.loads((plugin / rel).read_text(encoding="utf-8"))["mcpServers"]
     assert list(servers) == ["smetchik"]
+    assert set(servers["smetchik"]) == {"type", "url"}, "Keep compatibility with Codex 0.162.1; OAuth uses discovery"
     assert servers["smetchik"]["url"] == "https://smeta.nakasse.kz/mcp"
 out = root / "dist/smetchik-client.zip"
 out.parent.mkdir(exist_ok=True)
